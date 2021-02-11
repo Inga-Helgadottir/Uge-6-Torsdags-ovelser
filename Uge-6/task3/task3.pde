@@ -1,5 +1,5 @@
 // it takes a while to work
-
+// note to self: if it doesn´t work restart processing and it will work
 color redColor = color(255, 0, 0);
 color yellowColor = color(243, 250, 53);
 color greenColor = color(0, 255, 0);
@@ -14,7 +14,6 @@ void setup() {
 }
 
 void draw() {
-
   ellipseMode(CENTER);
   rectMode(CENTER);
 
@@ -40,7 +39,7 @@ void draw() {
 
     fill(greyColor);
     ellipse(100, 145, 40, 40);
-
+    
   } else if (currentLight == 2) {
     fill(redColor);
     ellipse(100, 55, 40, 40);
@@ -50,7 +49,7 @@ void draw() {
 
     fill(greyColor);
     ellipse(100, 145, 40, 40);
-
+    
   } else if (currentLight == 3) {
     fill(greyColor);
     ellipse(100, 55, 40, 40);
@@ -60,7 +59,7 @@ void draw() {
 
     fill(greenColor);
     ellipse(100, 145, 40, 40);
-
+    
   } else {
     fill(greyColor);
     ellipse(100, 55, 40, 40);
@@ -73,23 +72,23 @@ void draw() {
   }
 }
 
-void keyPressed(){ 
+void keyPressed() { 
 
-  switch(currentLight){
+  switch(currentLight) {
     case 0:
-    currentLight = 1;
-    break;
+      currentLight = 1;
+      break;
     case 1:
-    currentLight = 2;
-    break;
+      currentLight = 2;
+      break;
     case 2:
-    currentLight = 3;
-    break;
+      currentLight = 3;
+      break;
     case 3:
-    currentLight = 4;
-    break;
+      currentLight = 4;
+      break;
     case 4:
-    currentLight = 0;
-    break;
+      currentLight = 0;
+      break;
   }
 }
