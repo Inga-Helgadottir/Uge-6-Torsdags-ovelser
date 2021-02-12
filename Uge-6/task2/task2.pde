@@ -1,11 +1,10 @@
 String name = "S. Inga Helgadottir";
 String age = "25";
-boolean happy = false;
+boolean happy = true;
 
 println("Hi, my name is " + name);
 println("I am " + age + " years old");
 
+String areHappy = happy? "" : "dont";
 
-if (!happy) {
-  println("I dont clap my hands");
-}
+println("I " + areHappy + " clap my hands");
